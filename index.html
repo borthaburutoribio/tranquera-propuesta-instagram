@@ -1,82 +1,91 @@
-<!doctype html>
-<html lang="es">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="noindex">
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex">
 <title>Semana 1 · @tranquera_digital</title>
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wdth,wght@75..125,400..800&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
 <style>
-:root{--berry:#5B2330;--sky:#B7CCE5;--cream:#F6F1E7;--ink:#1D1B1A}
+:root{--berry:#5B2330;--sky:#B7CCE5;--cream:#F6F1E7;--ink:#1D1B1A;--butter:#F3E7A2}
 *{box-sizing:border-box;margin:0;padding:0}
 body{background:var(--cream);color:var(--ink);font-family:"Encode Sans",Arial,sans-serif}
 header{background:var(--berry);color:var(--cream);padding:40px 16px 34px}
-.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
-h1{font-stretch:75%;font-weight:700;font-size:clamp(34px,6vw,58px);line-height:1}
-h1 i{font-family:"Instrument Serif",serif;font-weight:400;color:#F3E7A2}
-header p{margin-top:12px;opacity:.85;font-size:17px}
-.day{display:grid;grid-template-columns:140px minmax(0,1fr);gap:24px;padding:34px 0;border-bottom:2px solid #e4dccd}
-.day>div{min-width:0}
+.wrap{max-width:1180px;margin:0 auto;padding:0 16px}
+h1{font-stretch:75%;font-weight:700;font-size:clamp(34px,6vw,60px);line-height:1}
+h1 i,h2 i{font-family:"Instrument Serif",serif;font-weight:400} h1 i{color:var(--butter)}
+header p{margin-top:12px;opacity:.88;font-size:17px;max-width:760px;line-height:1.45}
+h2{font-stretch:75%;font-size:34px;margin:44px 0 6px}
+.lead{opacity:.75;max-width:760px;line-height:1.45}
+.day{display:grid;grid-template-columns:170px minmax(0,1fr);gap:24px;padding:30px 0;border-bottom:2px solid #e4dccd}
 .when b{display:block;font-stretch:75%;font-size:30px;line-height:1}
-.when span{display:block;margin-top:6px;font-size:14px;letter-spacing:.12em;text-transform:uppercase;opacity:.65}
-.tag{display:inline-block;margin-top:10px;background:var(--ink);color:var(--cream);font-size:12px;font-weight:700;letter-spacing:.12em;padding:4px 10px;border-radius:4px}
+.when span{display:block;margin-top:6px;font-size:14px;letter-spacing:.12em;opacity:.65}
+.when small{display:block;margin-top:10px;font-size:13px;line-height:1.35;opacity:.65}
+.tag{display:inline-block;margin-top:10px;background:var(--ink);color:var(--cream);font-size:11px;font-weight:700;letter-spacing:.1em;padding:4px 8px;border-radius:4px;font-style:normal}
 .tag.reel{background:var(--berry)}
+.body{min-width:0}
 .media{display:flex;gap:12px;overflow-x:auto;padding-bottom:10px;scroll-snap-type:x mandatory}
-.media img{height:420px;width:auto;border-radius:6px;scroll-snap-align:start;box-shadow:6px 6px 0 var(--ink)}
-.media video{height:520px;width:auto;border-radius:10px;background:#000;box-shadow:6px 6px 0 var(--berry)}
-.cap{margin-top:18px;max-width:560px;background:#fff;border-radius:10px;padding:16px 18px;font-size:16px;line-height:1.45;white-space:pre-line;border:1px solid #e4dccd}
+.media img{height:400px;width:auto;border-radius:6px;scroll-snap-align:start;box-shadow:6px 6px 0 var(--ink)}
+.media video{height:540px;width:auto;border-radius:10px;background:#000;box-shadow:6px 6px 0 var(--berry)}
+.cap{margin-top:16px;max-width:560px;background:#fff;border-radius:10px;padding:16px 18px;font-size:15.5px;line-height:1.45;white-space:pre-line;border:1px solid #e4dccd}
 .cap small{display:block;font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.55;margin-bottom:6px}
-.wait{height:300px;width:180px;border:3px dashed #c9bfae;border-radius:10px;display:flex;align-items:center;justify-content:center;text-align:center;padding:16px;color:#8a7f6e;font-weight:600}
-@media (max-width:640px){.day{grid-template-columns:1fr;gap:12px}.media img{height:300px}.media video{height:420px}}
-</style>
-</head>
-<body>
-<header><div class="wrap">
-  <h1>Semana 1 · <i>@tranquera_digital</i></h1>
-  <p>Jueves 15 al miércoles 21 de octubre. Deslizá cada carrusel y dale play a los reels.</p>
-</div></header>
+.row{display:flex;gap:12px;overflow-x:auto;padding:10px 0 14px}
+.row img{height:360px;border-radius:10px;box-shadow:5px 5px 0 var(--ink)}
+.hl{display:flex;gap:22px;flex-wrap:wrap;padding:12px 0}
+.hl div{text-align:center;font-size:14px;font-weight:600}
+.hl img{width:110px;height:110px;object-fit:cover;border-radius:50%;border:3px solid #ccc;display:block;margin-bottom:8px}
+.note{background:#fff;border:1px solid #e4dccd;border-radius:10px;padding:14px 16px;max-width:760px;line-height:1.5;margin-top:10px;font-size:15.5px}
+.note b{color:var(--berry)}
+@media (max-width:640px){.day{grid-template-columns:1fr;gap:12px}.media img{height:300px}.media video{height:440px}.row img{height:280px}}
+</style></head><body>
+<header><div class="wrap"><h1>Semana 1 · <i>consolidación</i></h1>
+<p>Lunes 19 al domingo 25 de octubre. La primera semana arma la casa: el lunes salen los 3 fijados para que el que entre al perfil entienda en 10 segundos qué hacemos. Todos los reels arrancan con un gancho animado y tienen música propia.</p></div></header>
 <main class="wrap">
+<section class="day"><div class="when"><b>Lun 19</b><span>12:30</span><em class="tag reel">REEL · OFERTA · FIJADO 1</em><small>Fórmula de gancho #22 Contrarian Flip</small></div><div class="body"><div class="media"><video src="para-subir/lun19-r1-cierra-a-las-19.mp4" controls playsinline preload="metadata"></video></div><div class="cap"><small>Texto</small>Tu negocio cierra a las 19. Google sigue abierto toda la noche, y ahí te buscan.
 
-<section class="day"><div class="when"><b>Jue 15</b><span>12:30</span><em class="tag">CARRUSEL · FIJADO</em></div><div>
-  <div class="media"><img src="png/c11.png"><img src="png/c12.png"><img src="png/c13.png"><img src="png/c14.png"><img src="png/c16.png"></div>
-  <div class="cap"><small>Texto</small>Diseñamos tu página, te ayudamos a aparecer en Google y la seguimos mes a mes. Y antes de pagar, la ves.
-#PaginaWeb #DiseñoWeb #ComerciosCABA #TranqueraDigital</div></div></section>
+Hacemos tu página, te ponemos en Google y Maps, armamos el bot de tu WhatsApp y manejamos tus redes.
 
-<section class="day"><div class="when"><b>Jue 15</b><span>19:30</span><em class="tag reel">REEL · FIJADO</em></div><div>
-  <div class="media"><video src="para-subir/jue15-r1-bot-whatsapp-2am.mp4" controls playsinline preload="metadata"></video></div>
-  <div class="cap"><small>Texto</small>2:07 de la mañana y alguien quiere comprarte. ¿Quién le contesta?
-#BotsDeWhatsApp #WhatsAppBusiness #ComerciosCABA #TranqueraDigital</div></div></section>
+Escribinos por WhatsApp, el número está en el perfil.
 
-<section class="day"><div class="when"><b>Vie 16</b><span>12:30</span><em class="tag">CARRUSEL</em></div><div>
-  <div class="media"><img src="png/c21.png"><img src="png/c22.png"><img src="png/c23.png"><img src="png/c24.png"><img src="png/c25.png"><img src="png/c26.png"><img src="png/c27.png"><img src="png/c28.png"></div>
-  <div class="cap"><small>Texto</small>Lo primero que mira un cliente antes de ir a tu local. Guardalo, y si querés la lista, comentá LISTA.
-#GoogleMaps #ComerciosCABA #TranqueraDigital</div></div></section>
+#PaginaWeb #ComerciosCABA #TranqueraDigital</div></div></section><section class="day"><div class="when"><b>Lun 19</b><span>12:35</span><em class="tag">CARRUSEL · OFERTA · FIJADO 2</em><small>Portada de 5 palabras, 9 placas numeradas, resumen y palabra clave</small></div><div class="body"><div class="media"><img src="png/k1.png" loading="lazy"><img src="png/k2.png" loading="lazy"><img src="png/k3.png" loading="lazy"><img src="png/k4.png" loading="lazy"><img src="png/k5.png" loading="lazy"><img src="png/k6.png" loading="lazy"><img src="png/k7.png" loading="lazy"><img src="png/k8.png" loading="lazy"><img src="png/k9.png" loading="lazy"></div><div class="cap"><small>Texto</small>Antes de pagar un peso, ves cómo queda tu página.
 
-<section class="day"><div class="when"><b>Sáb 17</b><span>19:30</span><em class="tag reel">REEL</em></div><div>
-  <div class="media"><video src="para-subir/sab17-r2-son-las-2314.mp4" controls playsinline preload="metadata"></video></div>
-  <div class="cap"><small>Texto</small>A las 23:14 nadie te escribe. Te buscan.
-#PaginaWeb #GoogleMaps #ComerciosCABA #TranqueraDigital</div></div></section>
+Son 5 pasos: charlamos 10 minutos por WhatsApp, te armamos la propuesta con tus fotos y tus datos, ajustamos lo que no te guste, la publicamos con tu dominio y te acompañamos mes a mes en Google.
 
-<section class="day"><div class="when"><b>Dom 18</b><span>todo el día</span><em class="tag">HISTORIA</em></div><div>
-  <div class="media"><img src="png/h1.png"></div>
-  <div class="cap"><small>Encuesta (la pegás vos desde el celu)</small>Sí · No · Tengo Instagram nomás</div></div></section>
+Comentá PROPUESTA y te escribimos.
 
-<section class="day"><div class="when"><b>Lun 19</b><span>19:30</span><em class="tag reel">REEL</em></div><div>
-  <div class="media"><video src="para-subir/lun19-r3-tres-senales.mp4" controls playsinline preload="metadata"></video></div>
-  <div class="cap"><small>Texto</small>¿Te pasa alguna de las tres? Escribinos y te decimos cómo arreglarlo.
-#PaginaWeb #DiseñoWeb #ComerciosCABA #TranqueraDigital</div></div></section>
+#PaginaWeb #DiseñoWeb #TranqueraDigital</div></div></section><section class="day"><div class="when"><b>Lun 19</b><span>19:30</span><em class="tag reel">REEL · PRUEBA · FIJADO 3</em><small>Fórmula #23 The Statistic · dato real: 62 proyectos</small></div><div class="body"><div class="media"><video src="para-subir/lun19-r2-62-paginas.mp4" controls playsinline preload="metadata"></video></div><div class="cap"><small>Texto</small>62 páginas web armadas para negocios. Ninguna sale de una plantilla.
 
-<section class="day"><div class="when"><b>Mar 20</b><span>12:30</span><em class="tag">CARRUSEL</em></div><div>
-  <div class="media"><img src="png/c31.png"><img src="png/c32.png"><img src="png/c33.png"><img src="png/c34.png"><img src="png/c35.png"><img src="png/c36.png"></div>
-  <div class="cap"><small>Texto</small>Tener tu página te lleva menos tiempo del que pensás. El resto corre por nuestra cuenta.
-#PaginaWeb #ComerciosCABA #TranqueraDigital</div></div></section>
+Pilates, veterinarias, librerías, dentistas, estética, médicos, gastronomía y autopartes, entre otros. Todas se vieron antes de pagar.
 
-<section class="day"><div class="when"><b>Mié 21</b><span>19:30</span><em class="tag reel">REEL</em></div><div>
-  <div class="media"><div class="wait">Esperando la tendencia que me mandes</div></div>
-  <div class="cap"><small>Si no llega ninguna</small>Plan B: la prueba de los 10 segundos con el botón de WhatsApp.</div></div></section>
+Comentá 63 y la próxima es la tuya.
 
-</main>
-</body>
-</html>
+#PaginaWeb #DiseñoWeb #ComerciosCABA</div></div></section><section class="day"><div class="when"><b>Mié 21</b><span>19:30</span><em class="tag reel">REEL · ENSEÑAR</em><small>Fórmula #11 Numbered With A Favourite</small></div><div class="body"><div class="media"><video src="para-subir/mie21-r3-tres-senales.mp4" controls playsinline preload="metadata"></video></div><div class="cap"><small>Texto</small>Si tu página tarda en abrir, tu cliente no espera. Acá van 3 señales de que te está haciendo perder ventas.
+
+La tercera casi nadie la revisa: el botón de WhatsApp con un número fijo, o sin el 549 adelante. Lo tocan y no abre nada.
+
+Guardalo y revisá tu página hoy.
+
+#PaginaWeb #ComerciosCABA #TranqueraDigital</div></div></section><section class="day"><div class="when"><b>Jue 22</b><span>12:30</span><em class="tag">CARRUSEL · ENSEÑAR</em><small>9 placas con resumen para guardar y mandar</small></div><div class="body"><div class="media"><img src="png/c21.png" loading="lazy"><img src="png/c22.png" loading="lazy"><img src="png/c23.png" loading="lazy"><img src="png/c24.png" loading="lazy"><img src="png/c25.png" loading="lazy"><img src="png/c26.png" loading="lazy"><img src="png/c27.png" loading="lazy"><img src="png/c2r.png" loading="lazy"><img src="png/c28.png" loading="lazy"></div><div class="cap"><small>Texto</small>Antes de ir a tu local, tu cliente mira esto en Google.
+
+Seis cosas para revisar en tu ficha de Google Maps, de la más fácil a la que más se olvida.
+
+Comentá LISTA y te la mandamos.
+
+#GoogleMaps #ComerciosCABA #TranqueraDigital</div></div></section><section class="day"><div class="when"><b>Vie 23</b><span>19:30</span><em class="tag reel">REEL · OPINIÓN</em><small>Fórmula #22 Contrarian Flip</small></div><div class="body"><div class="media"><video src="para-subir/vie23-r4-instagram-no-es-pagina.mp4" controls playsinline preload="metadata"></video></div><div class="cap"><small>Texto</small>Tener Instagram no es tener página. Instagram es la vidriera y tu página es el local.
+
+En Google pesa más tu página: horario, dirección, precios y WhatsApp a un toque.
+
+Si tuvieras que quedarte con una sola, ¿cuál sería? Contanos en los comentarios.
+
+#PaginaWeb #Instagram #ComerciosCABA</div></div></section><section class="day"><div class="when"><b>Dom 25</b><span>19:00</span><em class="tag reel">REEL · ESCENA</em><small>Fórmula #21 Mid-Sentence</small></div><div class="body"><div class="media"><video src="para-subir/dom25-r5-son-las-2314.mp4" controls playsinline preload="metadata"></video></div><div class="cap"><small>Texto</small>Son las 23:14. Tu local está cerrado, pero tu cliente te está buscando.
+
+Si encuentra horario y dirección, mañana va. Si no, va al de la otra cuadra.
+
+Mandáselo a alguien que tiene un local.
+
+#PaginaWeb #GoogleMaps #ComerciosCABA</div></div></section>
+<h2>Destacadas</h2><p class="lead">Servicios · Cómo trabajamos · Preguntas · Contacto</p>
+<div class="hl"><div><img src="png/d1.png">Servicios</div><div><img src="png/d2.png">Cómo trabajamos</div><div><img src="png/d3.png">Preguntas</div><div><img src="png/d4.png">Contacto</div></div>
+<h2>Historias</h2><p class="lead">Lunes: lanzamiento, los fijados, encuesta y "mañana te contamos". Miércoles: caja de preguntas. Viernes: encuesta. Las encuestas y las cajas de preguntas se pegan desde el celular.</p>
+<div class="row"><img src="png/hl1.png"><img src="png/hl2.png"><img src="png/hl3.png"><img src="png/hl4.png"><img src="png/hw1.png"><img src="png/hv1.png"></div>
+<h2>Para tener en cuenta</h2>
+<div class="note"><b>Música:</b> los reels van con pistas propias. Si querés un audio en tendencia, ese reel lo subís vos desde el celular y elegís el audio ahí: Instagram no deja elegir música desde la compu.<br>
+<b>Nombre del perfil:</b> lo que va en "Nombre" también se busca dentro de Instagram. Propuesta: "Tranquera · Páginas web y bots" en vez de "Tranquera Digital · Consultora".<br>
+<b>Ronda de interacción:</b> 20 minutos por día, antes de publicar, comentando en 10 cuentas (5 grandes, 3 estudios parecidos, 2 posibles clientes). Te paso la lista para aprobar.</div>
+</main></body></html>
